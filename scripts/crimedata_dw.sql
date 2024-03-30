@@ -22,11 +22,12 @@ CREATE  TABLE crimedata_dw_igl.INSTANCE.dim_crime (
  );
 GO
 
-CREATE  TABLE crimedata_dw_igl.INSTANCE.dim_date ( 
-	date_id              int      NOT NULL,
+CREATE  TABLE crimedata_dw_igl.INSTANCE.dim_datetime ( 
+	datetime_id          int      NOT NULL,
 	date_rptd            datetime      NULL,
 	date_occ             datetime      NULL,
-	CONSTRAINT pk_dim_date PRIMARY KEY  ( date_id ) 
+	time_occ             varchar(4)      NULL,
+	CONSTRAINT pk_dim_date PRIMARY KEY  ( datetime_id ) 
  );
 GO
 
@@ -59,13 +60,6 @@ CREATE  TABLE crimedata_dw_igl.INSTANCE.dim_status (
  );
 GO
 
-CREATE  TABLE crimedata_dw_igl.INSTANCE.dim_time ( 
-	time_id              int      NOT NULL,
-	time_occ             varchar(4)      NULL,
-	CONSTRAINT pk_dim_time PRIMARY KEY  ( time_id ) 
- );
-GO
-
 CREATE  TABLE crimedata_dw_igl.INSTANCE.dim_victim ( 
 	victim_id            int      NOT NULL,
 	vict_age             varchar(3)      NULL,
@@ -88,8 +82,7 @@ CREATE  TABLE crimedata_dw_igl.INSTANCE.facts_incident (
 	premise_id           int      NOT NULL,
 	weapon_id            int      NOT NULL,
 	victim_id            int      NOT NULL,
-	date_id              int      NOT NULL,
-	time_id              int      NOT NULL,
+	datetime_id          int      NOT NULL,
 	location_id          int      NOT NULL,
 	status_id            int      NOT NULL,
 	CONSTRAINT pk_facts_incident PRIMARY KEY  ( fact_id ) 
