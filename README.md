@@ -1,7 +1,7 @@
 # Data Sourcing, Storing, and Modeling of LAPD Crime Data from 2020 to Present
 
 # Data Explanation
-The data comes from an inital reporting of a crime to law enforcement (either from emergency phone calls (911), visits to the police station, or online reporting, etc) in the Los Angeles area. Law enforcement officers or operators collect information about the reported crime such as the type of crime, location, time and date of occurrence, descriptions of suspects or victims. The information is then classified and documented (according to the data source, the original crime reports were typed on paper). The provided dataset is a transcribed version of the original paper documentation.
+The data comes from an inital reporting of a crime to law enforcement (either from emergency phone calls (911), visits to the police station, or online reporting, etc) in the city of Los Angeles. Law enforcement officers or operators collect information about the reported crime such as the type of crime, location, time and date of occurrence, descriptions of suspects or victims. The information is then classified and documented (according to the data source, the original crime reports were typed on paper). The provided dataset is a transcribed version of the original paper documentation.
 
 # Sourcing 
 
